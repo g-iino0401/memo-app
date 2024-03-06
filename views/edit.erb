@@ -1,0 +1,19 @@
+<div class="main-header">
+  <h2 class="main-header__title">メモを編集する</h2>
+</div>
+<section class="memo-main">
+  <form method="post" action="/memos/<%= params[:id] %>" class="form">
+    <div class="form-item">
+      <label class="form-item__label">タイトル</label>
+      <input type="text" name="title" class="form-item__titlearea" value="<%= @title %>">
+    </div>
+    <div class="form-item">
+      <label class="form-item__label">内容</label>
+      <textarea name="content" class="form-item__textarea"><%= @content %></textarea>
+    </div>
+    <div>
+      <input type="hidden" name="_method" value="patch">
+      <input type="submit" value="保存" class="form-item__button">
+    </div>
+  </form>
+</section>

@@ -1,0 +1,15 @@
+<div class="main-header">
+  <h2 class="main-header__title">メモ一覧</h2>
+</div>
+<section class="memo-main">
+  <div class="mb-4">
+    <a class="btn btn-secondary" href="/memos/create">メモを作成</a>
+  </div>
+  <ul>
+    <% @memos.each do |id, post| %>
+      <li>
+        <a href="/memos/<%= id %>"><%= CGI.escapeHTML(post["title"]) %></a>
+      </li>
+    <% end %>
+  </ul>
+</section>

@@ -1,0 +1,20 @@
+<div class="main-header">
+  <h2 class="main-header__title">メモ詳細画面</h2>
+</div>
+<div>
+  <p>タイトル：<%= CGI.escapeHTML(@title) %></p>
+  <p>詳細：<%= CGI.escapeHTML(@content) %></p>
+</div>
+<div class="d-flex mb-4">
+  <form action="/memos/<%= params[:id] %>/edit" method="get">
+    <input type="submit" value="編集" class="btn btn-primary me-2">
+  </form>
+  <form action="/memos/<%= params[:id] %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="削除" class="btn btn-primary">
+  </form>
+</div>
+<div>
+  <a class="btn btn-secondary" href="/memos">メモ一覧に戻る</a>
+</div>
+</section>
