@@ -2,8 +2,6 @@
 
 source "https://rubygems.org"
 
-# gem "rails"
-
 gem "sinatra"
 gem "sinatra-contrib"
 gem "rackup", "~> 2.1"
@@ -18,9 +16,5 @@ gem "pry"
 group :development do
     gem 'rubocop-fjord', require: false
 end
-
-# gem "rails"
-
-gem "rackup", "~> 2.1"
 
 gem 'erb_lint', require: false
