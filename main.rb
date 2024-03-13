@@ -46,10 +46,9 @@ post '/memos' do
   content = params[:content]
 
   memos = get_memos
-  memos ||= {}
 
   max_key = memos.keys.map(&:to_i).max || 0
-  id = (max_key + 1).to_s
+  id = (max_key + 1).to_i
   memos[id] = { 'title' => title, 'content' => content }
   set_memos(memos)
 
