@@ -1,20 +1,18 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "sinatra"
-gem "sinatra-contrib"
-gem "rackup", "~> 2.1"
+gem 'rackup', '~> 2.1'
+gem 'sinatra'
+gem 'sinatra-contrib'
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-gem "pry"
-
-#gem "rubocop"
+gem 'pry'
 
 # For plain Ruby scripts
 group :development do
-    gem 'rubocop-fjord', require: false
+  gem 'rubocop-fjord', require: false
 end
 
 gem 'erb_lint', require: false
