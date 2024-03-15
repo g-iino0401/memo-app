@@ -5,14 +5,14 @@ require 'sinatra/reloader'
 require 'json'
 require 'cgi'
 
-FILE_PATH = 'public/memos.json'
+FILE_PATH = 'data/memos.json'
 
 def get_memos
   if File.exist?(FILE_PATH) && !File.zero?(FILE_PATH)
     File.open(FILE_PATH) { |f| JSON.parse(f.read) }
   else
-    sample_file_path = 'public/sample.json'
-    File.exist?(sample_file_path) && !File.zero?(sample_file_path)
+    sample_file_path = 'data/sample.json'
+    File.exist?(sample_file_path)
     File.open(sample_file_path) { |f| JSON.parse(f.read) }
   end
 end
