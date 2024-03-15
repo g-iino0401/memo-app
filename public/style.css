@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main-header__title {
+    font-size: 28px;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form-item__label {
+    font-weight: bold;
+}
+
+.form-item__titlearea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.form-item__textarea {
+    width: calc(100% - 20px);
+    height: 150px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.form-item__button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.me-2 {
+    margin-right: 8px;
+}
+
+.btn {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.memo-main {
+    text-align: center;/
+}
+
+.memo-main .mb-4 {
+    margin-bottom: 20px;
+}
+
+.memo-main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.memo-main ul li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
